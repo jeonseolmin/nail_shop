@@ -3,7 +3,7 @@ package entity;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
-public class reservations {
+public class Reservations {
     private long reservationId;
     private LocalDateTime reservationDateTime;
     private String reservationStatus;
@@ -11,7 +11,7 @@ public class reservations {
     private Timestamp createAt;
 
     //생성자
-    public reservations(long reservationId, LocalDateTime reservationDateTime, String reservationStatus, String text, Timestamp createAt) {
+    public Reservations(long reservationId, LocalDateTime reservationDateTime, String reservationStatus, String text, Timestamp createAt) {
         this.reservationId = reservationId;
         this.reservationDateTime = reservationDateTime;
         this.reservationStatus = reservationStatus;

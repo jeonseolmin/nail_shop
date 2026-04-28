@@ -3,6 +3,7 @@ package entity;
 import java.util.Date;
 
 public class Staff {
+    private long staffId;
     private String name;
     private String phoneNumber;
     private String employmentStatus;
@@ -10,13 +11,24 @@ public class Staff {
     private Date resignDate;
     private int baseSalary;
 
-    public Staff(String name, String phoneNumber, String employmentStatus, Date hireDate, Date resignDate, int baseSalary) {
+    //생성자
+    public Staff(long staffId, String name, String phoneNumber, String employmentStatus, Date hireDate, Date resignDate, int baseSalary) {
+        this.staffId = staffId;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.employmentStatus = employmentStatus;
         this.hireDate = hireDate;
         this.resignDate = resignDate;
         this.baseSalary = baseSalary;
+    }
+
+    //Getter or Setter
+    public long getStaffId() {
+        return staffId;
+    }
+
+    public void setStaffId(long staffId) {
+        this.staffId = staffId;
     }
 
     public String getName() {

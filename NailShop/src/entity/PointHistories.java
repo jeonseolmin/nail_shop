@@ -2,7 +2,7 @@ package entity;
 
 import java.sql.Timestamp;
 
-public class pointHistories {
+public class PointHistories {
     private long pointHistoryId;
     private int changeAmount;
     private int balanceAfter;
@@ -10,7 +10,7 @@ public class pointHistories {
     private Timestamp createdAt;
 
     //생성자
-    public pointHistories(long pointHistoryId, int changeAmount, int balanceAfter, String changeType, Timestamp createdAt) {
+    public PointHistories(long pointHistoryId, int changeAmount, int balanceAfter, String changeType, Timestamp createdAt) {
         this.pointHistoryId = pointHistoryId;
         this.changeAmount = changeAmount;
         this.balanceAfter = balanceAfter;

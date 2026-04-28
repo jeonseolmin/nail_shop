@@ -2,7 +2,7 @@ package entity;
 
 import java.util.Date;
 
-public class promotions {
+public class Promotions {
     private long promotionId;
     private String name;
     private String text;
@@ -13,7 +13,7 @@ public class promotions {
 
     //생성자
 
-    public promotions(long promotionId, String name, String text, int discountAmount, Date startDate, Date endDate, boolean isActive) {
+    public Promotions(long promotionId, String name, String text, int discountAmount, Date startDate, Date endDate, boolean isActive) {
         this.promotionId = promotionId;
         this.name = name;
         this.text = text;
@@ -22,7 +22,7 @@ public class promotions {
         this.endDate = endDate;
         this.isActive = isActive;
     }
-    public promotions(String name, String text, int discountAmount, Date startDate, Date endDate, boolean isActive) {
+    public Promotions(String name, String text, int discountAmount, Date startDate, Date endDate, boolean isActive) {
         this.promotionId = 0;
         this.name = name;
         this.text = text;
