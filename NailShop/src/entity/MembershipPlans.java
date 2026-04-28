@@ -1,6 +1,6 @@
 package entity;
 
-public class Membership_plans {
+public class MembershipPlans {
     private long membershipPlanId;
     private String planName;
     private String planType;
@@ -10,7 +10,7 @@ public class Membership_plans {
     private boolean isActive;
 
     //생성자
-    public Membership_plans(long membershipPlanId, String planName, String planType, String paymentMethod, int paymentAmount, int creditAmount, boolean isActive) {
+    public MembershipPlans(long membershipPlanId, String planName, String planType, String paymentMethod, int paymentAmount, int creditAmount, boolean isActive) {
         this.membershipPlanId = membershipPlanId;
         this.planName = planName;
         this.planType = planType;

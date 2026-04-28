@@ -2,7 +2,7 @@ package entity;
 
 import java.sql.Timestamp;
 
-public class Customer_memberships {
+public class CustomerMemberships {
     private long customerMembershipId;
     private  int remainingBalance;
     private Timestamp joinedAt;
@@ -10,7 +10,7 @@ public class Customer_memberships {
     private String status;
 
     //생성자
-    public Customer_memberships(long customerMembershipId, int remainingBalance, Timestamp joinedAt, Timestamp expiredAt, String status) {
+    public CustomerMemberships(long customerMembershipId, int remainingBalance, Timestamp joinedAt, Timestamp expiredAt, String status) {
         this.customerMembershipId = customerMembershipId;
         this.remainingBalance = remainingBalance;
         this.joinedAt = joinedAt;
