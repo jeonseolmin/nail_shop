@@ -3,6 +3,7 @@ package entity;
 import java.util.Date;
 
 public class Customer {
+    private long customer_id;
     private  String name;
     private String phone_number;
     private Date birth_date;
@@ -11,6 +12,12 @@ public class Customer {
     private String status;
 
     //getter && setter
+    public long getCustomer_id() {
+        return customer_id;
+    }
+    public void setCustomer_id(long customer_id) {
+        this.customer_id = customer_id;
+    }
     public String getName() {
         return name;
     }
@@ -49,6 +56,15 @@ public class Customer {
     }
 
     //생성자
+    public Customer(long customer_id, String name, String phone_number, Date birth_date, long staff_id, String text, String status) {
+        this.customer_id = customer_id;
+        this.name = name;
+        this.phone_number = phone_number;
+        this.birth_date = birth_date;
+        this.staff_id = staff_id;
+        this.text = text;
+        this.status = status;
+    }
     public Customer(String name, String phone_number, Date birth_date, long staff_id, String text, String status) {
         this.name = name;
         this.phone_number = phone_number;
