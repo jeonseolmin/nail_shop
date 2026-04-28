@@ -4,45 +4,45 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class reservations {
-    private long reservation_id;
-    private LocalDateTime reservation_dateTime;
-    private String reservation_status;
+    private long reservationId;
+    private LocalDateTime reservationDateTime;
+    private String reservationStatus;
     private String text;
-    private Timestamp create_at;
+    private Timestamp createAt;
 
     //생성자
-    public reservations(long reservation_id, LocalDateTime reservation_dateTime, String reservation_status, String text, Timestamp create_at) {
-        this.reservation_id = reservation_id;
-        this.reservation_dateTime = reservation_dateTime;
-        this.reservation_status = reservation_status;
+    public reservations(long reservationId, LocalDateTime reservationDateTime, String reservationStatus, String text, Timestamp createAt) {
+        this.reservationId = reservationId;
+        this.reservationDateTime = reservationDateTime;
+        this.reservationStatus = reservationStatus;
         this.text = text;
-        this.create_at = create_at;
+        this.createAt = createAt;
     }
 
     //Getter Or Setter
 
-    public long getReservation_id() {
-        return reservation_id;
+    public long getReservationId() {
+        return reservationId;
     }
 
-    public void setReservation_id(long reservation_id) {
-        this.reservation_id = reservation_id;
+    public void setReservationId(long reservationId) {
+        this.reservationId = reservationId;
     }
 
-    public LocalDateTime getReservation_dateTime() {
-        return reservation_dateTime;
+    public LocalDateTime getReservationDateTime() {
+        return reservationDateTime;
     }
 
-    public void setReservation_dateTime(LocalDateTime reservation_dateTime) {
-        this.reservation_dateTime = reservation_dateTime;
+    public void setReservationDateTime(LocalDateTime reservationDateTime) {
+        this.reservationDateTime = reservationDateTime;
     }
 
-    public String getReservation_status() {
-        return reservation_status;
+    public String getReservationStatus() {
+        return reservationStatus;
     }
 
-    public void setReservation_status(String reservation_status) {
-        this.reservation_status = reservation_status;
+    public void setReservationStatus(String reservationStatus) {
+        this.reservationStatus = reservationStatus;
     }
 
     public String getText() {
@@ -53,11 +53,11 @@ public class reservations {
         this.text = text;
     }
 
-    public Timestamp getCreate_at() {
-        return create_at;
+    public Timestamp getCreateAt() {
+        return createAt;
     }
 
-    public void setCreate_at(Timestamp create_at) {
-        this.create_at = create_at;
+    public void setCreateAt(Timestamp createAt) {
+        this.createAt = createAt;
     }
 }

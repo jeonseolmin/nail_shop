@@ -3,60 +3,60 @@ package entity;
 import java.sql.Timestamp;
 
 public class Point_histories {
-    private long point_history_id;
-    private int  change_amount;
-    private int balance_after;
-    private String change_type;
-    private Timestamp created_at;
+    private long pointHistoryId;
+    private int changeAmount;
+    private int balanceAfter;
+    private String changeType;
+    private Timestamp createdAt;
 
     //생성자
-    public Point_histories(long point_history_id, int change_amount, int balance_after, String change_type, Timestamp created_at) {
-        this.point_history_id = point_history_id;
-        this.change_amount = change_amount;
-        this.balance_after = balance_after;
-        this.change_type = change_type;
-        this.created_at = created_at;
+    public Point_histories(long pointHistoryId, int changeAmount, int balanceAfter, String changeType, Timestamp createdAt) {
+        this.pointHistoryId = pointHistoryId;
+        this.changeAmount = changeAmount;
+        this.balanceAfter = balanceAfter;
+        this.changeType = changeType;
+        this.createdAt = createdAt;
     }
 
     //Getter Or Setter
 
-    public long getPoint_history_id() {
-        return point_history_id;
+    public long getPointHistoryId() {
+        return pointHistoryId;
     }
 
-    public void setPoint_history_id(long point_history_id) {
-        this.point_history_id = point_history_id;
+    public void setPointHistoryId(long pointHistoryId) {
+        this.pointHistoryId = pointHistoryId;
     }
 
-    public int getChange_amount() {
-        return change_amount;
+    public int getChangeAmount() {
+        return changeAmount;
     }
 
-    public void setChange_amount(int change_amount) {
-        this.change_amount = change_amount;
+    public void setChangeAmount(int changeAmount) {
+        this.changeAmount = changeAmount;
     }
 
-    public int getBalance_after() {
-        return balance_after;
+    public int getBalanceAfter() {
+        return balanceAfter;
     }
 
-    public void setBalance_after(int balance_after) {
-        this.balance_after = balance_after;
+    public void setBalanceAfter(int balanceAfter) {
+        this.balanceAfter = balanceAfter;
     }
 
-    public String getChange_type() {
-        return change_type;
+    public String getChangeType() {
+        return changeType;
     }
 
-    public void setChange_type(String change_type) {
-        this.change_type = change_type;
+    public void setChangeType(String changeType) {
+        this.changeType = changeType;
     }
 
-    public Timestamp getCreated_at() {
-        return created_at;
+    public Timestamp getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreated_at(Timestamp created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(Timestamp createdAt) {
+        this.createdAt = createdAt;
     }
 }

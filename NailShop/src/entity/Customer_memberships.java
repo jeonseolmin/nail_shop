@@ -3,52 +3,52 @@ package entity;
 import java.sql.Timestamp;
 
 public class Customer_memberships {
-    private long customer_membership_id;
-    private  int remaining_balance;
-    private Timestamp joined_at;
-    private Timestamp expired_at;
+    private long customerMembershipId;
+    private  int remainingBalance;
+    private Timestamp joinedAt;
+    private Timestamp expiredAt;
     private String status;
 
     //생성자
-    public Customer_memberships(long customer_membership_id, int remaining_balance, Timestamp joined_at, Timestamp expired_at, String status) {
-        this.customer_membership_id = customer_membership_id;
-        this.remaining_balance = remaining_balance;
-        this.joined_at = joined_at;
-        this.expired_at = expired_at;
+    public Customer_memberships(long customerMembershipId, int remainingBalance, Timestamp joinedAt, Timestamp expiredAt, String status) {
+        this.customerMembershipId = customerMembershipId;
+        this.remainingBalance = remainingBalance;
+        this.joinedAt = joinedAt;
+        this.expiredAt = expiredAt;
         this.status = status;
     }
 
     //Getter Or Setter
-    public long getCustomer_membership_id() {
-        return customer_membership_id;
+    public long getCustomerMembershipId() {
+        return customerMembershipId;
     }
 
-    public void setCustomer_membership_id(long customer_membership_id) {
-        this.customer_membership_id = customer_membership_id;
+    public void setCustomerMembershipId(long customerMembershipId) {
+        this.customerMembershipId = customerMembershipId;
     }
 
-    public int getRemaining_balance() {
-        return remaining_balance;
+    public int getRemainingBalance() {
+        return remainingBalance;
     }
 
-    public void setRemaining_balance(int remaining_balance) {
-        this.remaining_balance = remaining_balance;
+    public void setRemainingBalance(int remainingBalance) {
+        this.remainingBalance = remainingBalance;
     }
 
-    public Timestamp getJoined_at() {
-        return joined_at;
+    public Timestamp getJoinedAt() {
+        return joinedAt;
     }
 
-    public void setJoined_at(Timestamp joined_at) {
-        this.joined_at = joined_at;
+    public void setJoinedAt(Timestamp joinedAt) {
+        this.joinedAt = joinedAt;
     }
 
-    public Timestamp getExpired_at() {
-        return expired_at;
+    public Timestamp getExpiredAt() {
+        return expiredAt;
     }
 
-    public void setExpired_at(Timestamp expired_at) {
-        this.expired_at = expired_at;
+    public void setExpiredAt(Timestamp expiredAt) {
+        this.expiredAt = expiredAt;
     }
 
     public String getStatus() {

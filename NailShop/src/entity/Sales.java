@@ -3,38 +3,38 @@ package entity;
 import java.sql.Timestamp;
 
 public class Sales {
-    private long sale_id;
-    private int paid_amount;
+    private long saleId;
+    private int paidAmount;
     private int actual_revenue;
-    private String payment_method;
-    private Timestamp paid_at;
+    private String paymentMethod;
+    private Timestamp paidAt;
     private String memo;
 
     //생성자
-    public Sales(long sale_id, int paid_amount, int actual_revenue, String payment_method, Timestamp paid_at, String memo) {
-        this.sale_id = sale_id;
-        this.paid_amount = paid_amount;
+    public Sales(long saleId, int paidAmount, int actual_revenue, String paymentMethod, Timestamp paidAt, String memo) {
+        this.saleId = saleId;
+        this.paidAmount = paidAmount;
         this.actual_revenue = actual_revenue;
-        this.payment_method = payment_method;
-        this.paid_at = paid_at;
+        this.paymentMethod = paymentMethod;
+        this.paidAt = paidAt;
         this.memo = memo;
     }
     //Getter or Setter
 
-    public long getSale_id() {
-        return sale_id;
+    public long getSaleId() {
+        return saleId;
     }
 
-    public void setSale_id(long sale_id) {
-        this.sale_id = sale_id;
+    public void setSaleId(long saleId) {
+        this.saleId = saleId;
     }
 
-    public int getPaid_amount() {
-        return paid_amount;
+    public int getPaidAmount() {
+        return paidAmount;
     }
 
-    public void setPaid_amount(int paid_amount) {
-        this.paid_amount = paid_amount;
+    public void setPaidAmount(int paidAmount) {
+        this.paidAmount = paidAmount;
     }
 
     public int getActual_revenue() {
@@ -45,20 +45,20 @@ public class Sales {
         this.actual_revenue = actual_revenue;
     }
 
-    public String getPayment_method() {
-        return payment_method;
+    public String getPaymentMethod() {
+        return paymentMethod;
     }
 
-    public void setPayment_method(String payment_method) {
-        this.payment_method = payment_method;
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
     }
 
-    public Timestamp getPaid_at() {
-        return paid_at;
+    public Timestamp getPaidAt() {
+        return paidAt;
     }
 
-    public void setPaid_at(Timestamp paid_at) {
-        this.paid_at = paid_at;
+    public void setPaidAt(Timestamp paidAt) {
+        this.paidAt = paidAt;
     }
 
     public String getMemo() {

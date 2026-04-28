@@ -3,42 +3,42 @@ package entity;
 import java.util.Date;
 
 public class promotions {
-    private long promotion_id;
+    private long promotionId;
     private String name;
     private String text;
-    private int discount_amount;
-    private Date start_date;
-    private  Date end_date;
-    private boolean is_active;
+    private int discountAmount;
+    private Date startDate;
+    private  Date endDate;
+    private boolean isActive;
 
     //생성자
 
-    public promotions(long promotion_id, String name, String text, int discount_amount, Date start_date, Date end_date, boolean is_active) {
-        this.promotion_id = promotion_id;
+    public promotions(long promotionId, String name, String text, int discountAmount, Date startDate, Date endDate, boolean isActive) {
+        this.promotionId = promotionId;
         this.name = name;
         this.text = text;
-        this.discount_amount = discount_amount;
-        this.start_date = start_date;
-        this.end_date = end_date;
-        this.is_active = is_active;
+        this.discountAmount = discountAmount;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.isActive = isActive;
     }
-    public promotions(String name, String text, int discount_amount, Date start_date, Date end_date, boolean is_active) {
-        this.promotion_id = 0;
+    public promotions(String name, String text, int discountAmount, Date startDate, Date endDate, boolean isActive) {
+        this.promotionId = 0;
         this.name = name;
         this.text = text;
-        this.discount_amount = discount_amount;
-        this.start_date = start_date;
-        this.end_date = end_date;
-        this.is_active = is_active;
+        this.discountAmount = discountAmount;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.isActive = isActive;
     }
 
     // Getter Or Setter
-    public long getPromotion_id() {
-        return promotion_id;
+    public long getPromotionId() {
+        return promotionId;
     }
 
-    public void setPromotion_id(long promotion_id) {
-        this.promotion_id = promotion_id;
+    public void setPromotionId(long promotionId) {
+        this.promotionId = promotionId;
     }
 
     public String getName() {
@@ -57,36 +57,36 @@ public class promotions {
         this.text = text;
     }
 
-    public int getDiscount_amount() {
-        return discount_amount;
+    public int getDiscountAmount() {
+        return discountAmount;
     }
 
-    public void setDiscount_amount(int discount_amount) {
-        this.discount_amount = discount_amount;
+    public void setDiscountAmount(int discountAmount) {
+        this.discountAmount = discountAmount;
     }
 
-    public Date getStart_date() {
-        return start_date;
+    public Date getStartDate() {
+        return startDate;
     }
 
-    public void setStart_date(Date start_date) {
-        this.start_date = start_date;
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
     }
 
-    public Date getEnd_date() {
-        return end_date;
+    public Date getEndDate() {
+        return endDate;
     }
 
-    public void setEnd_date(Date end_date) {
-        this.end_date = end_date;
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
 
-    public boolean isIs_active() {
-        return is_active;
+    public boolean isActive() {
+        return isActive;
     }
 
-    public void setIs_active(boolean is_active) {
-        this.is_active = is_active;
+    public void setActive(boolean active) {
+        this.isActive = active;
     }
 
 

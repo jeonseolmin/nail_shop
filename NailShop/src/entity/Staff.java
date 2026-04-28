@@ -4,19 +4,19 @@ import java.util.Date;
 
 public class Staff {
     private String name;
-    private String phone_number;
-    private String employment_status;
-    private Date hire_date;
-    private Date resign_date;
-    private int base_salary;
+    private String phoneNumber;
+    private String employmentStatus;
+    private Date hireDate;
+    private Date resignDate;
+    private int baseSalary;
 
-    public Staff(String name, String phone_number, String employment_status, Date hire_date, Date resign_date, int base_salary) {
+    public Staff(String name, String phoneNumber, String employmentStatus, Date hireDate, Date resignDate, int baseSalary) {
         this.name = name;
-        this.phone_number = phone_number;
-        this.employment_status = employment_status;
-        this.hire_date = hire_date;
-        this.resign_date = resign_date;
-        this.base_salary = base_salary;
+        this.phoneNumber = phoneNumber;
+        this.employmentStatus = employmentStatus;
+        this.hireDate = hireDate;
+        this.resignDate = resignDate;
+        this.baseSalary = baseSalary;
     }
 
     public String getName() {
@@ -27,43 +27,43 @@ public class Staff {
         this.name = name;
     }
 
-    public String getPhone_number() {
-        return phone_number;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhone_number(String phone_number) {
-        this.phone_number = phone_number;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public String getEmployment_status() {
-        return employment_status;
+    public String getEmploymentStatus() {
+        return employmentStatus;
     }
 
-    public void setEmployment_status(String employment_status) {
-        this.employment_status = employment_status;
+    public void setEmploymentStatus(String employmentStatus) {
+        this.employmentStatus = employmentStatus;
     }
 
-    public Date getHire_date() {
-        return hire_date;
+    public Date getHireDate() {
+        return hireDate;
     }
 
-    public void setHire_date(Date hire_date) {
-        this.hire_date = hire_date;
+    public void setHireDate(Date hireDate) {
+        this.hireDate = hireDate;
     }
 
-    public Date getResign_date() {
-        return resign_date;
+    public Date getResignDate() {
+        return resignDate;
     }
 
-    public void setResign_date(Date resign_date) {
-        this.resign_date = resign_date;
+    public void setResignDate(Date resignDate) {
+        this.resignDate = resignDate;
     }
 
-    public int getBase_salary() {
-        return base_salary;
+    public int getBaseSalary() {
+        return baseSalary;
     }
 
-    public void setBase_salary(int base_salary) {
-        this.base_salary = base_salary;
+    public void setBaseSalary(int baseSalary) {
+        this.baseSalary = baseSalary;
     }
 }
