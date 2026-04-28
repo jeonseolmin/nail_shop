@@ -3,20 +3,20 @@ package entity;
 import java.util.Date;
 
 public class Customer {
-    private long customer_id;
+    private long customerId;
     private  String name;
-    private String phone_number;
-    private Date birth_date;
-    private long staff_id;
+    private String phoneNumber;
+    private Date birthDate;
+    private long staffId;
     private String text;
     private String status;
 
     //getter && setter
-    public long getCustomer_id() {
-        return customer_id;
+    public long getCustomerId() {
+        return customerId;
     }
-    public void setCustomer_id(long customer_id) {
-        this.customer_id = customer_id;
+    public void setCustomerId(long customerId) {
+        this.customerId = customerId;
     }
     public String getName() {
         return name;
@@ -24,23 +24,23 @@ public class Customer {
     public void setName(String name) {
         this.name = name;
     }
-    public String getPhone_number() {
-        return phone_number;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
-    public void setPhone_number(String phone_number) {
-        this.phone_number = phone_number;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
-    public Date getBirth_date() {
-        return birth_date;
+    public Date getBirthDate() {
+        return birthDate;
     }
-    public void setBirth_date(Date birth_date) {
-        this.birth_date = birth_date;
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
-    public long getStaff_id() {
-        return staff_id;
+    public long getStaffId() {
+        return staffId;
     }
-    public void setStaff_id(long staff_id) {
-        this.staff_id = staff_id;
+    public void setStaffId(long staffId) {
+        this.staffId = staffId;
     }
     public String getText() {
         return text;
@@ -56,20 +56,20 @@ public class Customer {
     }
 
     //생성자
-    public Customer(long customer_id, String name, String phone_number, Date birth_date, long staff_id, String text, String status) {
-        this.customer_id = customer_id;
+    public Customer(long customerId, String name, String phoneNumber, Date birthDate, long staffId, String text, String status) {
+        this.customerId = customerId;
         this.name = name;
-        this.phone_number = phone_number;
-        this.birth_date = birth_date;
-        this.staff_id = staff_id;
+        this.phoneNumber = phoneNumber;
+        this.birthDate = birthDate;
+        this.staffId = staffId;
         this.text = text;
         this.status = status;
     }
-    public Customer(String name, String phone_number, Date birth_date, long staff_id, String text, String status) {
+    public Customer(String name, String phoneNumber, Date birthDate, long staffId, String text, String status) {
         this.name = name;
-        this.phone_number = phone_number;
-        this.birth_date = birth_date;
-        this.staff_id = staff_id;
+        this.phoneNumber = phoneNumber;
+        this.birthDate = birthDate;
+        this.staffId = staffId;
         this.text = text;
         this.status = status;
     }

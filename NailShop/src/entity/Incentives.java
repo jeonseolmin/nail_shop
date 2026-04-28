@@ -1,49 +1,49 @@
 package entity;
 
 public class Incentives {
-        private  long incentive_id;
-        private String incentive_type;
-        private int incentive_amount;
-        private  String settlement_month;
+        private  long incentiveId;
+        private String incentiveType;
+        private int incentiveAmount;
+        private  String settlementMonth;
 
         //생성자
-    public Incentives(long incentive_id, String incentive_type, int incentive_amount, String settlement_month) {
-        this.incentive_id = incentive_id;
-        this.incentive_type = incentive_type;
-        this.incentive_amount = incentive_amount;
-        this.settlement_month = settlement_month;
+    public Incentives(long incentiveId, String incentiveType, int incentiveAmount, String settlementMonth) {
+        this.incentiveId = incentiveId;
+        this.incentiveType = incentiveType;
+        this.incentiveAmount = incentiveAmount;
+        this.settlementMonth = settlementMonth;
     }
 
     //Getter Or Setter
-    public long getIncentive_id() {
-        return incentive_id;
+    public long getIncentiveId() {
+        return incentiveId;
     }
 
-    public void setIncentive_id(long incentive_id) {
-        this.incentive_id = incentive_id;
+    public void setIncentiveId(long incentiveId) {
+        this.incentiveId = incentiveId;
     }
 
-    public String getIncentive_type() {
-        return incentive_type;
+    public String getIncentiveType() {
+        return incentiveType;
     }
 
-    public void setIncentive_type(String incentive_type) {
-        this.incentive_type = incentive_type;
+    public void setIncentiveType(String incentiveType) {
+        this.incentiveType = incentiveType;
     }
 
-    public int getIncentive_amount() {
-        return incentive_amount;
+    public int getIncentiveAmount() {
+        return incentiveAmount;
     }
 
-    public void setIncentive_amount(int incentive_amount) {
-        this.incentive_amount = incentive_amount;
+    public void setIncentiveAmount(int incentiveAmount) {
+        this.incentiveAmount = incentiveAmount;
     }
 
-    public String getSettlement_month() {
-        return settlement_month;
+    public String getSettlementMonth() {
+        return settlementMonth;
     }
 
-    public void setSettlement_month(String settlement_month) {
-        this.settlement_month = settlement_month;
+    public void setSettlementMonth(String settlementMonth) {
+        this.settlementMonth = settlementMonth;
     }
 }

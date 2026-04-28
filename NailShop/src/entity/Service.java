@@ -1,70 +1,70 @@
 package entity;
 
 public class Service {
-    private long service_id;
-    private String service_name;
-    private int non_member_price;
-    private int member_price;
-    private int duration_minutes;
-    private boolean is_active;
+    private long serviceId;
+    private String serviceName;
+    private int nonMemberPrice;
+    private int memberPrice;
+    private int durationMinutes;
+    private boolean isActive;
 
     //생성자
-    public Service(long service_id, String service_name, int non_member_price, int member_price, int duration_minutes, boolean is_active) {
-        this.service_id = service_id;
-        this.service_name = service_name;
-        this.non_member_price = non_member_price;
-        this.member_price = member_price;
-        this.duration_minutes = duration_minutes;
-        this.is_active = is_active;
+    public Service(long serviceId, String serviceName, int nonMemberPrice, int memberPrice, int durationMinutes, boolean isActive) {
+        this.serviceId = serviceId;
+        this.serviceName = serviceName;
+        this.nonMemberPrice = nonMemberPrice;
+        this.memberPrice = memberPrice;
+        this.durationMinutes = durationMinutes;
+        this.isActive = isActive;
     }
 
     //Getter or Setter
 
-    public long getService_id() {
-        return service_id;
+    public long getServiceId() {
+        return serviceId;
     }
 
-    public void setService_id(long service_id) {
-        this.service_id = service_id;
+    public void setServiceId(long serviceId) {
+        this.serviceId = serviceId;
     }
 
-    public String getService_name() {
-        return service_name;
+    public String getServiceName() {
+        return serviceName;
     }
 
-    public void setService_name(String service_name) {
-        this.service_name = service_name;
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 
-    public int getNon_member_price() {
-        return non_member_price;
+    public int getNonMemberPrice() {
+        return nonMemberPrice;
     }
 
-    public void setNon_member_price(int non_member_price) {
-        this.non_member_price = non_member_price;
+    public void setNonMemberPrice(int nonMemberPrice) {
+        this.nonMemberPrice = nonMemberPrice;
     }
 
-    public int getMember_price() {
-        return member_price;
+    public int getMemberPrice() {
+        return memberPrice;
     }
 
-    public void setMember_price(int member_price) {
-        this.member_price = member_price;
+    public void setMemberPrice(int memberPrice) {
+        this.memberPrice = memberPrice;
     }
 
-    public int getDuration_minutes() {
-        return duration_minutes;
+    public int getDurationMinutes() {
+        return durationMinutes;
     }
 
-    public void setDuration_minutes(int duration_minutes) {
-        this.duration_minutes = duration_minutes;
+    public void setDurationMinutes(int durationMinutes) {
+        this.durationMinutes = durationMinutes;
     }
 
-    public boolean isIs_active() {
-        return is_active;
+    public boolean isActive() {
+        return isActive;
     }
 
-    public void setIs_active(boolean is_active) {
-        this.is_active = is_active;
+    public void setActive(boolean active) {
+        this.isActive = active;
     }
 }
