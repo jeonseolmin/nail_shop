@@ -11,7 +11,7 @@ public record CustomerMembershipsDto(
         Timestamp expiredAt,
         String status
 ) {
-    public static CustomerMembershipsDto fromEntity(CustomerMemberships customerMemberships){
+    public static CustomerMembershipsDto fromEntity(CustomerMemberships customerMemberships) {
         return new CustomerMembershipsDto(
                 customerMemberships.getCustomerMembershipId(),
                 customerMemberships.getRemainingBalance(),
@@ -21,7 +21,7 @@ public record CustomerMembershipsDto(
         );
     }
 
-    public static CustomerMemberships fromDto(CustomerMembershipsDto customerMembershipsDto){
+    public static CustomerMemberships fromDto(CustomerMembershipsDto customerMembershipsDto) {
         return new CustomerMemberships(
                 customerMembershipsDto.customerMembershipId(),
                 customerMembershipsDto.remainingBalance(),
