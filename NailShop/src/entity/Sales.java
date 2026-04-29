@@ -1,17 +1,17 @@
 package entity;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public class Sales {
     private long saleId;
     private int paidAmount;
     private int actualRevenue;
     private String paymentMethod;
-    private Timestamp paidAt;
+    private LocalDateTime paidAt;
     private String memo;
 
     //생성자
-    public Sales(long saleId, int paidAmount, int actualRevenue, String paymentMethod, Timestamp paidAt, String memo) {
+    public Sales(long saleId, int paidAmount, int actualRevenue, String paymentMethod, LocalDateTime paidAt, String memo) {
         this.saleId = saleId;
         this.paidAmount = paidAmount;
         this.actualRevenue = actualRevenue;
@@ -53,11 +53,11 @@ public class Sales {
         this.paymentMethod = paymentMethod;
     }
 
-    public Timestamp getPaidAt() {
+    public LocalDateTime getPaidAt() {
         return paidAt;
     }
 
-    public void setPaidAt(Timestamp paidAt) {
+    public void setPaidAt(LocalDateTime paidAt) {
         this.paidAt = paidAt;
     }
 
