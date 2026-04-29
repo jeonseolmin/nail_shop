@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 public record CustomerMembershipsDto(
         long customerMembershipId,
         long customerId,
+        long membershipPlanId,
         int remainingBalance,
         LocalDateTime joinedAt,
         LocalDateTime expiredAt,
@@ -17,6 +18,7 @@ public record CustomerMembershipsDto(
         return new CustomerMembershipsDto(
                 customerMemberships.getCustomerMembershipId(),
                 customerMemberships.getCustomerId(),
+                customerMemberships.getMembershipPlanId(),
                 customerMemberships.getRemainingBalance(),
                 customerMemberships.getJoinedAt(),
                 customerMemberships.getExpiredAt(),
@@ -28,6 +30,7 @@ public record CustomerMembershipsDto(
         return new CustomerMemberships(
                 customerMembershipsDto.customerMembershipId(),
                 customerMembershipsDto.customerId(),
+                customerMembershipsDto.customerMembershipId(),
                 customerMembershipsDto.remainingBalance(),
                 customerMembershipsDto.joinedAt(),
                 customerMembershipsDto.expiredAt(),
