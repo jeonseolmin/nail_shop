@@ -31,10 +31,10 @@ public class Customer {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
     public long getStaffId() {
@@ -57,7 +57,7 @@ public class Customer {
     }
 
     //생성자
-    public Customer(long customerId, String name, String phoneNumber, Date birthDate, long staffId, String text, String status) {
+    public Customer(long customerId, String name, String phoneNumber, LocalDate birthDate, long staffId, String text, String status) {
         this.customerId = customerId;
         this.name = name;
         this.phoneNumber = phoneNumber;
@@ -66,7 +66,7 @@ public class Customer {
         this.text = text;
         this.status = status;
     }
-    public Customer(String name, String phoneNumber, Date birthDate, long staffId, String text, String status) {
+    public Customer(String name, String phoneNumber, LocalDate birthDate, long staffId, String text, String status) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.birthDate = birthDate;

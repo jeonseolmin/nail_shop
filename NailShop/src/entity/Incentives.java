@@ -2,13 +2,19 @@ package entity;
 
 public class Incentives {
         private  long incentiveId;
+        private long staffId;
+        private long saleId;
         private String incentiveType;
         private int incentiveAmount;
         private  String settlementMonth;
 
         //생성자
-    public Incentives(long incentiveId, String incentiveType, int incentiveAmount, String settlementMonth) {
+
+
+    public Incentives(long incentiveId, long staffId, long saleId, String incentiveType, int incentiveAmount, String settlementMonth) {
         this.incentiveId = incentiveId;
+        this.staffId = staffId;
+        this.saleId = saleId;
         this.incentiveType = incentiveType;
         this.incentiveAmount = incentiveAmount;
         this.settlementMonth = settlementMonth;
@@ -21,6 +27,22 @@ public class Incentives {
 
     public void setIncentiveId(long incentiveId) {
         this.incentiveId = incentiveId;
+    }
+
+    public long getStaffId() {
+        return staffId;
+    }
+
+    public void setStaffId(long staffId) {
+        this.staffId = staffId;
+    }
+
+    public long getSaleId() {
+        return saleId;
+    }
+
+    public void setSaleId(long saleId) {
+        this.saleId = saleId;
     }
 
     public String getIncentiveType() {

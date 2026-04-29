@@ -4,19 +4,25 @@ import java.time.LocalDateTime;
 
 public class Reservations {
     private long reservationId;
+    private long customerId;
+    private long staffId;
     private LocalDateTime reservationDateTime;
     private String reservationStatus;
     private String text;
     private LocalDateTime createAt;
 
     //생성자
-    public Reservations(long reservationId, LocalDateTime reservationDateTime, String reservationStatus, String text, LocalDateTime createAt) {
+
+    public Reservations(long reservationId, long customerId, long staffId, LocalDateTime reservationDateTime, String reservationStatus, String text, LocalDateTime createAt) {
         this.reservationId = reservationId;
+        this.customerId = customerId;
+        this.staffId = staffId;
         this.reservationDateTime = reservationDateTime;
         this.reservationStatus = reservationStatus;
         this.text = text;
         this.createAt = createAt;
     }
+
 
     //Getter Or Setter
 
@@ -26,6 +32,22 @@ public class Reservations {
 
     public void setReservationId(long reservationId) {
         this.reservationId = reservationId;
+    }
+
+    public long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(long customerId) {
+        this.customerId = customerId;
+    }
+
+    public long getStaffId() {
+        return staffId;
+    }
+
+    public void setStaffId(long staffId) {
+        this.staffId = staffId;
     }
 
     public LocalDateTime getReservationDateTime() {

@@ -2,11 +2,12 @@ package dto;
 
 import entity.PointHistories;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public record PointHistoriesDto(
         long pointHistoryId,
+        long customerMembershipId,
+        long saleId,
         int changeAmount,
         int balanceAfter,
         String changeType,
@@ -16,6 +17,8 @@ public record PointHistoriesDto(
     public static PointHistoriesDto fromEntity(PointHistories pointHistories) {
         return new PointHistoriesDto(
                 pointHistories.getPointHistoryId(),
+                pointHistories.getCustomerMembershipId(),
+                pointHistories.getSaleId(),
                 pointHistories.getChangeAmount(),
                 pointHistories.getBalanceAfter(),
                 pointHistories.getChangeType(),
@@ -26,6 +29,8 @@ public record PointHistoriesDto(
     public static PointHistories fromDto(PointHistoriesDto pointHistoriesDto) {
         return new PointHistories(
                 pointHistoriesDto.pointHistoryId(),
+                pointHistoriesDto.customerMembershipId(),
+                pointHistoriesDto.saleId(),
                 pointHistoriesDto.changeAmount(),
                 pointHistoriesDto.balanceAfter(),
                 pointHistoriesDto.changeType(),

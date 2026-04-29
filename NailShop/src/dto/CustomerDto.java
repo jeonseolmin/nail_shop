@@ -2,13 +2,14 @@ package dto;
 
 import entity.Customer;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public record CustomerDto(
         long customerId,
         String name,
         String phoneNumber,
-        Date birthDate,
+        LocalDate birthDate,
         long staffId,
         String text,
         String status

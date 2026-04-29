@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Staff {
     private long staffId;
+    private long customerId;
     private String name;
     private String phoneNumber;
     private String employmentStatus;
@@ -12,8 +13,11 @@ public class Staff {
     private int baseSalary;
 
     //생성자
-    public Staff(long staffId, String name, String phoneNumber, String employmentStatus, LocalDate hireDate, LocalDate resignDate, int baseSalary) {
+
+
+    public Staff(long staffId, long customerId, String name, String phoneNumber, String employmentStatus, LocalDate hireDate, LocalDate resignDate, int baseSalary) {
         this.staffId = staffId;
+        this.customerId = customerId;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.employmentStatus = employmentStatus;
@@ -29,6 +33,14 @@ public class Staff {
 
     public void setStaffId(long staffId) {
         this.staffId = staffId;
+    }
+
+    public long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(long customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {

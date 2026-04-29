@@ -4,14 +4,17 @@ import java.time.LocalDateTime;
 
 public class CustomerMemberships {
     private long customerMembershipId;
+    private  long customerId;
     private  int remainingBalance;
     private LocalDateTime joinedAt;
     private LocalDateTime expiredAt;
     private String status;
 
     //생성자
-    public CustomerMemberships(long customerMembershipId, int remainingBalance, LocalDateTime joinedAt, LocalDateTime expiredAt, String status) {
+
+    public CustomerMemberships(long customerMembershipId, long customerId, int remainingBalance, LocalDateTime joinedAt, LocalDateTime expiredAt, String status) {
         this.customerMembershipId = customerMembershipId;
+        this.customerId = customerId;
         this.remainingBalance = remainingBalance;
         this.joinedAt = joinedAt;
         this.expiredAt = expiredAt;
@@ -25,6 +28,14 @@ public class CustomerMemberships {
 
     public void setCustomerMembershipId(long customerMembershipId) {
         this.customerMembershipId = customerMembershipId;
+    }
+
+    public long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(long customerId) {
+        this.customerId = customerId;
     }
 
     public int getRemainingBalance() {

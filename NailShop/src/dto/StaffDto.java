@@ -7,6 +7,7 @@ import java.util.Date;
 
 public record StaffDto(
         long staffId,
+        long customerId,
         String name,
         String phoneNumber,
         String employmentStatus,
@@ -18,6 +19,7 @@ public record StaffDto(
     public static StaffDto fromEntity(Staff staff){
         return  new StaffDto(
                 staff.getStaffId(),
+                staff.getCustomerId(),
                 staff.getName(),
                 staff.getPhoneNumber(),
                 staff.getEmploymentStatus(),
@@ -30,6 +32,7 @@ public record StaffDto(
     public static Staff fromDto(StaffDto staffDto){
         return new Staff(
                 staffDto.staffId(),
+                staffDto.customerId(),
                 staffDto.name(),
                 staffDto.phoneNumber(),
                 staffDto.employmentStatus(),
