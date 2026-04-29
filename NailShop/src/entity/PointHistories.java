@@ -1,16 +1,16 @@
 package entity;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public class PointHistories {
     private long pointHistoryId;
     private int changeAmount;
     private int balanceAfter;
     private String changeType;
-    private Timestamp createdAt;
+    private LocalDateTime createdAt;
 
     //생성자
-    public PointHistories(long pointHistoryId, int changeAmount, int balanceAfter, String changeType, Timestamp createdAt) {
+    public PointHistories(long pointHistoryId, int changeAmount, int balanceAfter, String changeType, LocalDateTime createdAt) {
         this.pointHistoryId = pointHistoryId;
         this.changeAmount = changeAmount;
         this.balanceAfter = balanceAfter;
@@ -52,11 +52,11 @@ public class PointHistories {
         this.changeType = changeType;
     }
 
-    public Timestamp getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(Timestamp createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 }

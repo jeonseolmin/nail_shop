@@ -5,16 +5,16 @@ import java.sql.Timestamp;
 public class Sales {
     private long saleId;
     private int paidAmount;
-    private int actual_revenue;
+    private int actualRevenue;
     private String paymentMethod;
     private Timestamp paidAt;
     private String memo;
 
     //생성자
-    public Sales(long saleId, int paidAmount, int actual_revenue, String paymentMethod, Timestamp paidAt, String memo) {
+    public Sales(long saleId, int paidAmount, int actualRevenue, String paymentMethod, Timestamp paidAt, String memo) {
         this.saleId = saleId;
         this.paidAmount = paidAmount;
-        this.actual_revenue = actual_revenue;
+        this.actualRevenue = actualRevenue;
         this.paymentMethod = paymentMethod;
         this.paidAt = paidAt;
         this.memo = memo;
@@ -37,12 +37,12 @@ public class Sales {
         this.paidAmount = paidAmount;
     }
 
-    public int getActual_revenue() {
-        return actual_revenue;
+    public int getActualRevenue() {
+        return actualRevenue;
     }
 
-    public void setActual_revenue(int actual_revenue) {
-        this.actual_revenue = actual_revenue;
+    public void setActualRevenue(int actualRevenue) {
+        this.actualRevenue = actualRevenue;
     }
 
     public String getPaymentMethod() {

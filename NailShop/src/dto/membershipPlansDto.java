@@ -19,7 +19,7 @@ public record membershipPlansDto(
                 membershipPlans.getPaymentMethod(),
                 membershipPlans.getPaymentAmount(),
                 membershipPlans.getCreditAmount(),
-                membershipPlans.is_active()
+                membershipPlans.isActive()
         );
     }
 

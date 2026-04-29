@@ -2,6 +2,7 @@ package dto;
 
 import entity.Staff;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public record StaffDto(
@@ -9,8 +10,8 @@ public record StaffDto(
         String name,
         String phoneNumber,
         String employmentStatus,
-        Date hireDate,
-        Date resignDate,
+        LocalDate hireDate,
+        LocalDate resignDate,
         int baseSalary
 ) {
 

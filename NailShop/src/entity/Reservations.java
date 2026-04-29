@@ -1,6 +1,5 @@
 package entity;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class Reservations {
@@ -8,10 +7,10 @@ public class Reservations {
     private LocalDateTime reservationDateTime;
     private String reservationStatus;
     private String text;
-    private Timestamp createAt;
+    private LocalDateTime createAt;
 
     //생성자
-    public Reservations(long reservationId, LocalDateTime reservationDateTime, String reservationStatus, String text, Timestamp createAt) {
+    public Reservations(long reservationId, LocalDateTime reservationDateTime, String reservationStatus, String text, LocalDateTime createAt) {
         this.reservationId = reservationId;
         this.reservationDateTime = reservationDateTime;
         this.reservationStatus = reservationStatus;
@@ -53,11 +52,11 @@ public class Reservations {
         this.text = text;
     }
 
-    public Timestamp getCreateAt() {
+    public LocalDateTime getCreateAt() {
         return createAt;
     }
 
-    public void setCreateAt(Timestamp createAt) {
+    public void setCreateAt(LocalDateTime createAt) {
         this.createAt = createAt;
     }
 }

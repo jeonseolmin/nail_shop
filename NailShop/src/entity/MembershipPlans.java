@@ -7,17 +7,17 @@ public class MembershipPlans {
     private String paymentMethod;
     private  int paymentAmount;
     private int creditAmount;
-    private boolean isActive;
+    private boolean active;
 
     //생성자
-    public MembershipPlans(long membershipPlanId, String planName, String planType, String paymentMethod, int paymentAmount, int creditAmount, boolean isActive) {
+    public MembershipPlans(long membershipPlanId, String planName, String planType, String paymentMethod, int paymentAmount, int creditAmount, boolean active) {
         this.membershipPlanId = membershipPlanId;
         this.planName = planName;
         this.planType = planType;
         this.paymentMethod = paymentMethod;
         this.paymentAmount = paymentAmount;
         this.creditAmount = creditAmount;
-        this.isActive = isActive;
+        this.active = active;
     }
 
     //Getter Or Setter
@@ -70,11 +70,11 @@ public class MembershipPlans {
         this.creditAmount = creditAmount;
     }
 
-    public boolean is_active() {
-        return isActive;
+    public boolean isActive() {
+        return active;
     }
 
     public void setActive(boolean active) {
-        this.isActive = active;
+        this.active = active;
     }
 }

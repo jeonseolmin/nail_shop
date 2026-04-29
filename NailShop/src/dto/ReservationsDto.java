@@ -1,8 +1,6 @@
 package dto;
 
 import entity.Reservations;
-
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public record ReservationsDto(
@@ -10,7 +8,7 @@ public record ReservationsDto(
         LocalDateTime reservationDateTime,
         String reservationStatus,
         String text,
-        Timestamp createAt
+        LocalDateTime createAt
 ) {
     public static ReservationsDto fromEntity(Reservations reservations){
         return new ReservationsDto(
