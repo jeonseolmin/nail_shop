@@ -3,13 +3,13 @@ package dto;
 import entity.Customer;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public record CustomerDto(
         long customerId,
         String name,
         String phoneNumber,
         LocalDate birthDate,
+        LocalDate firstVisitDate,
         long staffId,
         String text,
         String status
@@ -20,8 +20,9 @@ public record CustomerDto(
                 customer.getName(),
                 customer.getPhoneNumber(),
                 customer.getBirthDate(),
+                customer.getFirstVisitDate(),
                 customer.getStaffId(),
-                customer.getText(),
+                customer.getNotes(),
                 customer.getStatus()
         );
     }
@@ -32,6 +33,7 @@ public record CustomerDto(
                 customerDto.name(),
                 customerDto.phoneNumber(),
                 customerDto.birthDate(),
+                customerDto.firstVisitDate(),
                 customerDto.staffId(),
                 customerDto.text(),
                 customerDto.status()

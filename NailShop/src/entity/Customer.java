@@ -1,15 +1,15 @@
 package entity;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Customer {
     private long customerId;
     private  String name;
     private String phoneNumber;
     private LocalDate birthDate;
+    private LocalDate firstVisitDate;
     private long staffId;
-    private String text;
+    private String notes;
     private String status;
 
     //getter && setter
@@ -37,17 +37,23 @@ public class Customer {
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
+    public LocalDate getFirstVisitDate() {
+        return firstVisitDate;
+    }
+    public void setFirstVisitDate(LocalDate firstVisitDate) {
+        this.firstVisitDate = firstVisitDate;
+    }
     public long getStaffId() {
         return staffId;
     }
     public void setStaffId(long staffId) {
         this.staffId = staffId;
     }
-    public String getText() {
-        return text;
+    public String getNotes() {
+        return notes;
     }
-    public void setText(String text) {
-        this.text = text;
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
     public String getStatus() {
         return status;
@@ -57,21 +63,15 @@ public class Customer {
     }
 
     //생성자
-    public Customer(long customerId, String name, String phoneNumber, LocalDate birthDate, long staffId, String text, String status) {
+
+    public Customer(long customerId, String name, String phoneNumber, LocalDate birthDate, LocalDate firstVisitDate, long staffId, String notes, String status) {
         this.customerId = customerId;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.birthDate = birthDate;
+        this.firstVisitDate = firstVisitDate;
         this.staffId = staffId;
-        this.text = text;
-        this.status = status;
-    }
-    public Customer(String name, String phoneNumber, LocalDate birthDate, long staffId, String text, String status) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.birthDate = birthDate;
-        this.staffId = staffId;
-        this.text = text;
+        this.notes = notes;
         this.status = status;
     }
 }
