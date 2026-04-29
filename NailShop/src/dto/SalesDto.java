@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 public record SalesDto(
         long saleId,
         int paidAmount,
-        int actual_revenue,
+        int actualRevenue,
         String paymentMethod,
         Timestamp paidAt,
         String memo
@@ -16,7 +16,7 @@ public record SalesDto(
         return  new SalesDto(
                 sales.getSaleId(),
                 sales.getPaidAmount(),
-                sales.getActual_revenue(),
+                sales.getActualRevenue(),
                 sales.getPaymentMethod(),
                 sales.getPaidAt(),
                 sales.getMemo()

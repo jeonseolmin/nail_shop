@@ -1,18 +1,18 @@
 package entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Staff {
     private long staffId;
     private String name;
     private String phoneNumber;
     private String employmentStatus;
-    private Date hireDate;
-    private Date resignDate;
+    private LocalDate hireDate;
+    private LocalDate resignDate;
     private int baseSalary;
 
     //생성자
-    public Staff(long staffId, String name, String phoneNumber, String employmentStatus, Date hireDate, Date resignDate, int baseSalary) {
+    public Staff(long staffId, String name, String phoneNumber, String employmentStatus, LocalDate hireDate, LocalDate resignDate, int baseSalary) {
         this.staffId = staffId;
         this.name = name;
         this.phoneNumber = phoneNumber;
@@ -55,19 +55,19 @@ public class Staff {
         this.employmentStatus = employmentStatus;
     }
 
-    public Date getHireDate() {
+    public LocalDate getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(Date hireDate) {
+    public void setHireDate(LocalDate hireDate) {
         this.hireDate = hireDate;
     }
 
-    public Date getResignDate() {
+    public LocalDate getResignDate() {
         return resignDate;
     }
 
-    public void setResignDate(Date resignDate) {
+    public void setResignDate(LocalDate resignDate) {
         this.resignDate = resignDate;
     }
 

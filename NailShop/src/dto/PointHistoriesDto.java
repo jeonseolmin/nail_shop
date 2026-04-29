@@ -3,13 +3,14 @@ package dto;
 import entity.PointHistories;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public record PointHistoriesDto(
         long pointHistoryId,
         int changeAmount,
         int balanceAfter,
         String changeType,
-        Timestamp createdAt
+        LocalDateTime createdAt
 ) {
 
     public static PointHistoriesDto fromEntity(PointHistories pointHistories) {

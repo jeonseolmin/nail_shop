@@ -1,16 +1,16 @@
 package entity;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public class CustomerMemberships {
     private long customerMembershipId;
     private  int remainingBalance;
-    private Timestamp joinedAt;
-    private Timestamp expiredAt;
+    private LocalDateTime joinedAt;
+    private LocalDateTime expiredAt;
     private String status;
 
     //생성자
-    public CustomerMemberships(long customerMembershipId, int remainingBalance, Timestamp joinedAt, Timestamp expiredAt, String status) {
+    public CustomerMemberships(long customerMembershipId, int remainingBalance, LocalDateTime joinedAt, LocalDateTime expiredAt, String status) {
         this.customerMembershipId = customerMembershipId;
         this.remainingBalance = remainingBalance;
         this.joinedAt = joinedAt;
@@ -35,19 +35,19 @@ public class CustomerMemberships {
         this.remainingBalance = remainingBalance;
     }
 
-    public Timestamp getJoinedAt() {
+    public LocalDateTime getJoinedAt() {
         return joinedAt;
     }
 
-    public void setJoinedAt(Timestamp joinedAt) {
+    public void setJoinedAt(LocalDateTime joinedAt) {
         this.joinedAt = joinedAt;
     }
 
-    public Timestamp getExpiredAt() {
+    public LocalDateTime getExpiredAt() {
         return expiredAt;
     }
 
-    public void setExpiredAt(Timestamp expiredAt) {
+    public void setExpiredAt(LocalDateTime expiredAt) {
         this.expiredAt = expiredAt;
     }
 

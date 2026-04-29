@@ -1,12 +1,13 @@
 package entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Customer {
     private long customerId;
     private  String name;
     private String phoneNumber;
-    private Date birthDate;
+    private LocalDate birthDate;
     private long staffId;
     private String text;
     private String status;

@@ -6,16 +6,16 @@ public class Service {
     private int nonMemberPrice;
     private int memberPrice;
     private int durationMinutes;
-    private boolean isActive;
+    private boolean active;
 
     //생성자
-    public Service(long serviceId, String serviceName, int nonMemberPrice, int memberPrice, int durationMinutes, boolean isActive) {
+    public Service(long serviceId, String serviceName, int nonMemberPrice, int memberPrice, int durationMinutes, boolean active) {
         this.serviceId = serviceId;
         this.serviceName = serviceName;
         this.nonMemberPrice = nonMemberPrice;
         this.memberPrice = memberPrice;
         this.durationMinutes = durationMinutes;
-        this.isActive = isActive;
+        this.active = active;
     }
 
     //Getter or Setter
@@ -61,10 +61,10 @@ public class Service {
     }
 
     public boolean isActive() {
-        return isActive;
+        return active;
     }
 
     public void setActive(boolean active) {
-        this.isActive = active;
+        this.active = active;
     }
 }

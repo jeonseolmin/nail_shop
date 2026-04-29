@@ -2,6 +2,8 @@ package dto;
 
 import entity.Promotions;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public record PromotionsDto(
@@ -9,8 +11,8 @@ public record PromotionsDto(
         String name,
         String text,
         int discountAmount,
-        Date startDate,
-        Date endDate,
+        LocalDate startDate,
+        LocalDate endDate,
         boolean isActive
 
 ) {
